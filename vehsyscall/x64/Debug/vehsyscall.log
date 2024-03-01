@@ -1,6 +1,2 @@
-﻿  Assembling coleak.asm...
-  vehsyscall.cpp
-E:\百度云金盾\渗透测试25 cobalt strike 篇\免杀\vehsyscall\vehsyscall\vehsyscall\vehsyscall.cpp(141,22): warning C4311: “类型强制转换”: 从“PVOID”到“int”的指针截断
-E:\百度云金盾\渗透测试25 cobalt strike 篇\免杀\vehsyscall\vehsyscall\vehsyscall\vehsyscall.cpp(141,22): warning C4302: “类型强制转换”: 从“PVOID”到“int”截断
-E:\百度云金盾\渗透测试25 cobalt strike 篇\免杀\vehsyscall\vehsyscall\vehsyscall\vehsyscall.cpp(154): warning C4715: “GetSSN”: 不是所有的控件路径都返回值
+﻿  LINK : 没有找到 E:\百度云金盾\渗透测试25 cobalt strike 篇\免杀\vehsyscall\vehsyscall\x64\Debug\vehsyscall.exe 或上一个增量链接没有生成它；正在执行完全链接
   vehsyscall.vcxproj -> E:\百度云金盾\渗透测试25 cobalt strike 篇\免杀\vehsyscall\vehsyscall\x64\Debug\vehsyscall.exe
