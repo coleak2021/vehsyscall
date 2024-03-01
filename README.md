@@ -55,7 +55,9 @@ int main() {
 
 **VEH syscall流程**
 
-![image-20240229092953218](C:/Users/admin/AppData/Roaming/Typora/typora-user-images/image-20240229092953218.png)
+![image-20240229092953218](https://github.com/coleak2021/vehsyscall/assets/103516488/bd5656a2-81a8-4307-a12a-8dd813dc7a31)
+
+
 
 ```c
 // Vectored Exception Handler function
@@ -238,7 +240,8 @@ Windows 2000	5
 
 **内存小端存储**
 
-![image-20240228164732206](C:/Users/admin/AppData/Roaming/Typora/typora-user-images/image-20240228164732206.png)
+![image-20240228164732206](https://github.com/coleak2021/vehsyscall/assets/103516488/57d29b31-7d9e-49ee-b0d0-a2426f24f042)
+
 
 
 
@@ -248,7 +251,8 @@ Windows 2000	5
 正常系统调用时，主程序模块->kernel32.dll->ntdll.dll->syscall，这样当0环执行结束返回3环的时候，这个返回地址应该是在ntdll所在的地址范围之内。直接调用syscall时，rip将会是你的主程序模块内，而并不是在ntdll所在的范围内。
 ```
 
-![image-20220310014525396](C:/Users/admin/AppData/Roaming/Typora/typora-user-images/image-20220310014525396.png)
+![image-20220310014525396](https://github.com/coleak2021/vehsyscall/assets/103516488/9aebd248-a441-4aec-931d-e09c705897bf)
+
 
 当然同样很好绕过，使用间接调用，也就是在ntdll中调用syscall stub的末尾部分，调用完成后会返回到ntdll，即syscall和return指令在 ntdll.dll 内存中的syscall stub执行
 
